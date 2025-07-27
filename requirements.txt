@@ -1,0 +1,69 @@
+# --- RAG 系统核心组件 ---
+fastapi==0.104.0
+uvicorn==0.24.0
+pydantic==2.11.7
+rank-bm25==0.2.2
+jieba==0.42.1
+openai==1.93.2
+tiktoken==0.9.0
+numpy==1.26.4
+sentence-transformers==5.0.0
+transformers==4.53.3
+
+# --- 文档解析与处理 (Unstructured & dependencies) ---
+unstructured==0.18.9
+unstructured-inference==1.0.5
+unstructured.pytesseract==0.3.15 # 注意：可能需要单独安装 Tesseract-OCR 引擎
+pandas==2.3.1
+lxml==6.0.0
+python-docx==1.2.0
+openpyxl==3.1.5
+python-pptx==1.0.2
+pdfminer.six==20250506
+PyMuPDF==1.26.3 # fitz
+pdf2image==1.17.0
+# unstructured 还依赖许多其他小库，已包含在下面
+
+# --- 数据处理与科学计算 ---
+scikit-learn==1.7.0
+scipy==1.16.0
+umap-learn==0.5.9.post2 # RAPTOR 聚类需要
+numba==0.61.2 # umap-learn 依赖
+
+# --- 命令行与Web界面 ---
+streamlit==1.47.0
+rich==14.0.0
+requests==2.31.0
+psutil==7.0.0
+
+# --- 其他通用库与依赖 ---
+aiohttp==3.12.13
+anyio==3.7.1
+beautifulsoup4==4.13.4
+cachetools==5.5.2
+certifi==2025.7.14
+chardet==5.2.0
+charset-normalizer==3.4.2
+click==8.2.1
+colorama==0.4.6
+cryptography==45.0.5
+dataclasses-json==0.6.7
+filelock==3.17.0
+huggingface-hub==0.33.2
+idna==3.10
+Jinja2==3.1.6
+joblib==1.5.1
+Markdown==3.8.2
+nest-asyncio==1.6.0
+packaging==25.0
+Pillow==11.1.0
+python-dotenv==1.0.1
+PyYAML==6.0.2
+safetensors==0.5.3
+six==1.17.0
+SQLAlchemy==2.0.41 # llama-index 的依赖
+starlette==0.27.0 # fastapi 的依赖
+tenacity==8.5.0
+tqdm==4.66.1
+typing_extensions==4.12.2
+urllib3==2.5.0
