@@ -1,0 +1,29 @@
+{
+  "mode_name": "Flat",
+  "llm_api_key": "sk-xxxxxxxxxx",
+  "llm_base_url": "https://xxxxxxxxxx",
+  "llm_model_name": "xxxxxxx",
+
+  "index_type": "Flat",
+  "metric": "cosine",
+
+  "embed_model": "BAAI/bge-small-zh-v1.5",
+  "embed_model_source": "online",
+  "embed_dim": 512,
+  "embed_len": 512,
+  "batch_size": 32,
+
+  "vec_weight": 0.7,
+  "kw_weight": 0.3,
+  "top_k": 3,
+  "threshold": 0.55,
+
+  "proc_chunk_token_size": 200,
+  "proc_enable_raptor": true,
+  "proc_raptor_max_clusters": 12,
+  "use_code_space": false,
+
+  "storage": "./storage",
+  "cache": "./model_cache",
+  "data": "./data"
+}
